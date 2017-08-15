@@ -43,7 +43,7 @@ articleOne :{
         </p>
         
         
-        `},
+        `}
 };
 
 function createTemplate(data){
