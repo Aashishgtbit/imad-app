@@ -4,8 +4,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articles ={
-    articleOne:{
+var articleOne ={
+    
         title:'Article-one|Aashish Tiwar',
         heading:'Article One',
         date:'Aug 14, 2016',
@@ -18,8 +18,8 @@ var articles ={
              Hurrah !! I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement.
         </p>
         `
-    }
-};
+    };
+
 function createTemplate(data){
     var title=data.title;
     var heading=data.heading;
