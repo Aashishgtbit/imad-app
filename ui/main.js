@@ -16,7 +16,7 @@ button.onclick = function(){
     //request not done yet;
     };
        //make a request.
-     httpRequest.open('GET', 'http://aashishtiwari97.imad.hasura-app.io/counter', true);
-     httpRequest.send();
+     request.open('GET', 'http://aashishtiwari97.imad.hasura-app.io/counter', true);
+     request.send();
         
     };
