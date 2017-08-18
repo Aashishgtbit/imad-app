@@ -12,7 +12,7 @@ var articles={
         date:'Aug 14, 2016',
         content:
         `<p>
-             Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement.
+             Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the  web developement.
         </p>
         
         <p>
