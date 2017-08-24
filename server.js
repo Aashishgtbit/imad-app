@@ -105,10 +105,10 @@ app.get('/test-db',function(req, res){
     pool.query('Select * From Test',function(err,result){
        if(err){
            res.status(500).send(err.toString());
-           else{
+           }
+            else {
                res.send(JSON.stringify(result));
            }
-       } 
     });
     //make a request with the results.
 });
