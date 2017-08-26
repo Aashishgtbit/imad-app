@@ -12,48 +12,6 @@ var config={
 var app = express();
 app.use(morgan('combined'));
 
-var articles={
-    'article-one' :{
-    
-        title:'Article-one|Aashish Tiwari',
-        heading:'Article One',
-        date:'Aug 14, 2016',
-        content:
-        `<p>
-             Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the  web developement.
-        </p>
-        
-        <p>
-             Hurrah !! I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement. Here I have created this web page to learn the basics of the web developement.
-        </p>
-        `
-    },
-    'article-two':{
-        title:'Article-Two|Aashish Tiwari',
-        heading:'Article Two',
-        date:'Aug 15, 2016',
-        content:
-        `<p>
-             Here I have created this web page to learn the basics of the web developement.Here I have created this web page to learn the basics of the web developement.
-        </p>
-        
-        <p>
-             Here I have created this web page to learn the basics of the web developement.
-        </p>
-        `},
-    'article-three':{
-        title:'Article-Three|Aashish Tiwari',
-        heading:'Article Three',
-        date:'Aug 15, 2016',
-        content:
-        `<p>
-             This is the content of the article three.
-        </p>
-        
-        
-        `}
-};
-
 function createTemplate(data){
     var title= data.title;
     var heading=data.heading;
