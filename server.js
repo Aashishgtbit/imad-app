@@ -63,7 +63,7 @@ function hash(input,salt){
  return hashed.toString('hex');
 }
 app.get('/hash/:input',function(req,res){
-   var hashedString = hash(req.params.input,salt);
+   var hashedString = hash(req.params.input,'this-is-a-same-random-string');
    res.send(hashedString);
 });
 var pool = new Pool(config);
