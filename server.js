@@ -86,16 +86,16 @@ app.post('/create-user',function(req,res){
 });
 
 app.get('/login',function(req,res){
-    //this function is not used to inset data into the database but it is used to check the data .
+    //this function is not used to insert data into the database but it is used to check the data .
     var username = req.body.username;
    var password = req.body.password;
    
-   pool.query('SELECT * FROM "user" where username = $1',[username],function(err,result){
+   pool.query('SELECT * FROM "user" WHERE username = $1',[username],function(err,result){
      if(err){
            res.status(500).send(err.toString());
            }
-            else
-            {if(result.rows.length === 0){
+            else {
+                if(result.rows.length === 0){
                 res.send(403).send('username/password is invalid');
             }else{
                 // Match the password.
