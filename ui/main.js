@@ -21,8 +21,8 @@ submit.onclick= function() {
             //request not done yet;
             };
     //make a request.
-        var username = document.getElementById('username');
-         var password = document.getElementById('password');
+        var username = document.getElementById('username').value;
+         var password = document.getElementById('password').value;
         console.log(username);
         console.log(password);
         request.open('POST', 'http://aashishtiwari97.imad.hasura-app.io/login', true);
