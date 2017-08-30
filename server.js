@@ -85,7 +85,7 @@ app.post('/create-user',function(req,res){
    });
 });
 
-app.get('/login',function(req,res){
+app.post('/login',function(req,res){
     //this function is not used to insert data into the database but it is used to check the data .
     var username = req.body.username;
    var password = req.body.password;
